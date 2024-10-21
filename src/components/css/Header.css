@@ -1,35 +1,74 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #282c34;
-    padding: 20px;
-    color: white;
-}
-
-.header-title {
-  font-size: 24px;
-}
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #1e1e2f;
+     padding: 20px;
+     color: white;
+ }
 
 .header-logo {
-    height: 50px; /* Hauteur du logo */
-    margin-right: 20px; /* Espacement à droite du logo */
+    height: 50px;
 }
 
 .header-buttons {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 20px;
 }
 
 .header-button {
-  padding: 10px 15px;
-  background-color: #61dafb;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
 }
 
-.header-button:hover {
-  background-color: #21a1f1;
+.catalog-button {
+    background-color: #61dafb;
+    transition: background-color 0.3s;
+}
+
+.catalog-button:hover {
+    background-color: #21a1f1;
+}
+
+.cart-button {
+    background-color: #61dafb;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.cart-button:hover {
+    background-color: #21a1f1;
+}
+
+.cart-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.header-space {
+    height: 20px;
+}
+
+
+.header-space {
+    height: 20px;
 }
