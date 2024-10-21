@@ -1,0 +1,54 @@
+.cart-container {
+  max-width: 800px; /* Largeur maximale du panier */
+  margin: 0 auto; /* Centrer le conteneur */
+  padding: 20px; /* Espacement interne */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.cart-title {
+  text-align: center; /* Centre le titre */
+  color: #282c34; /* Couleur du texte */
+  margin-bottom: 20px; /* Espacement en bas */
+}
+
+.cart-item {
+  display: flex; /* Flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  padding: 10px; /* Espacement interne des éléments */
+  border-bottom: 1px solid #ddd; /* Ligne de séparation */
+}
+
+.cart-item:last-child {
+  border-bottom: none; /* Pas de ligne pour le dernier élément */
+}
+
+.cart-item-name {
+  font-size: 18px; /* Taille du nom de l'article */
+}
+
+.cart-item-price {
+  font-size: 16px; /* Taille du prix */
+  color: #333; /* Couleur du prix */
+}
+
+.cart-button {
+  padding: 8px 12px; /* Espacement interne des boutons */
+  border: none; /* Pas de bordure */
+  border-radius: 4px; /* Coins arrondis */
+  background-color: #61dafb; /* Couleur du bouton */
+  color: white; /* Couleur du texte du bouton */
+  cursor: pointer; /* Curseur de pointeur */
+  transition: background-color 0.3s; /* Transition de couleur */
+}
+
+.cart-button:hover {
+  background-color: #21a1f1; /* Couleur au survol */
+}
+
+.total-amount {
+  text-align: right; /* Alignement à droite */
+  font-size: 20px; /* Taille du texte du total */
+  margin-top: 20px; /* Espacement en haut */
+}
