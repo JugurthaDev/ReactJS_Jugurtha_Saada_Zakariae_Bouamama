@@ -1,0 +1,84 @@
+/* ListPage.css */
+
+.shoe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.shoe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* Largeur pour trois cartes par ligne */
+    transition: transform 0.3s;
+}
+
+.shoe-card:hover {
+    transform: translateY(-5px);
+}
+
+.shoe-image {
+    height: 200px; /* Hauteur fixe pour l'image */
+    overflow: hidden; /* Masque le débordement */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoe-image img {
+    max-width: 100%; /* L'image prend toute la largeur de son conteneur */
+    max-height: 100%; /* L'image prend toute la hauteur de son conteneur */
+    object-fit: contain; /* Assure que l'image garde son aspect sans déformer */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.add-to-cart.clicked {
+    background-color: #ffcc00; /* Couleur lorsque le bouton est cliqué */
+    transition: background-color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+.detail-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.detail-button:hover {
+    background-color: #0069d9;
+}
